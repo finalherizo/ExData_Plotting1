@@ -36,7 +36,7 @@ dataset.frame <- read.csv(file = dataset.filename, skip = 66636, nrows = 2880, s
 # Plot Global active power
 par(mfrow = c(1, 1))
 with(dataset.frame, 
-     hist(Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (killowatts)"))
+     hist(Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)"))
 dev.copy(png, "plot1.png")
 dev.off()
 
